@@ -36,7 +36,7 @@ public class Produto implements Serializable {
     public Integer getId() {
         return id;
     }
-
+   
     public void setId(Integer id) {
         this.id = id;
     }
@@ -64,5 +64,14 @@ public class Produto implements Serializable {
     public void setPreco(BigDecimal preco) {
         this.preco = preco;
     }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+    
     
 }
