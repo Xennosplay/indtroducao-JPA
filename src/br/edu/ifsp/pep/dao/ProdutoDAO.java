@@ -21,7 +21,7 @@ public class ProdutoDAO {
 
     public ProdutoDAO() {
         
-        emf = Persistence.createEntityManagerFactory("Aula1PU");
+        emf = Persistence.createEntityManagerFactory("aula1PU");
     }
     
     

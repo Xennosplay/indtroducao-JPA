@@ -21,7 +21,7 @@ public class CategoriaDAO {
 
     public CategoriaDAO() {
         
-        emf = Persistence.createEntityManagerFactory("Aula1PU");
+        emf = Persistence.createEntityManagerFactory("aula1PU");
     }
     
     
