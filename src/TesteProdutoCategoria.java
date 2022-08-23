@@ -27,23 +27,23 @@ public class TesteProdutoCategoria {
         
         adicionarProdutos();
         
-//        reajustarPrecoProdutos(10);
-//        exibirProdutos();
+        reajustarPrecoProdutos(10);
+        exibirProdutos();
             
     }
     
-    private static void teste(){
-        EntityManager em = Persistence.createEntityManagerFactory("aula1PU").createEntityManager();
-                
-        
-        adicionarProdutos();
-        
-        List<Produto> produtos = produtoDAO.buscar();
-        for (Produto p : produtos){
-            System.out.println("Descrição:" + p.getDescricao());
-            System.out.println("Categoria:" + p.getCategoria().getDescricao());
-        }
-    }
+//    private static void teste(){
+//        EntityManager em = Persistence.createEntityManagerFactory("aula1PU").createEntityManager();
+//                
+//        
+//        adicionarProdutos();
+//        
+//        List<Produto> produtos = produtoDAO.buscar();
+//        for (Produto p : produtos){
+//            System.out.println("Descrição:" + p.getDescricao());
+//            System.out.println("Categoria:" + p.getCategoria().getDescricao());
+//        }
+//    }
     
     
     private static void adicionarProdutos(){
@@ -68,8 +68,8 @@ public class TesteProdutoCategoria {
     
     private static void reajustarPrecoProdutos(double porcentagem){
         for (Produto p : produtoDAO.buscar()){
-            BigDecimal reajustar = new BigDecimal(p.getPreco().multiply((porcentagem/100)));
-            p.setPreco(reajustar.add(p.getPreco()));
+//            BigDecimal reajustar = new BigDecimal(p.getPreco().multiply((porcentagem/100)));
+//            p.setPreco(reajustar.add(p.getPreco()));
         }
     }
     
