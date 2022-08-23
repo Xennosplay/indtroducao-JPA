@@ -6,6 +6,7 @@ package br.edu.ifsp.pep.modelo;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Column;
@@ -50,7 +51,7 @@ public class Veiculo implements Serializable{
     private BigDecimal valor;
     
     @ManyToMany
-    private List<Acessorio> acessorios;
+    private List<Acessorio> acessorios = new ArrayList<>();
 
     public Long getCodigo() {
         return codigo;

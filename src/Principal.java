@@ -32,14 +32,14 @@ public class Principal {
         p2.setEmail("ana@ifsp.edu.br");
         p2.setLogradouro("X");
         p2.setNumero(2);
-//
-//        Pessoa p3 = new Pessoa();
-//        p3.setDataNascimento(new Date());
-//        p3.setNome("José");
-//        p3.setSalario(new BigDecimal(555.999999d));
-//        p3.setEmail("jose@ifsp.edu.br");
-//        p3.setLogradouro("Y");
-//        p3.setNumero(1);
+        
+        Pessoa p3 = new Pessoa();
+        p3.setDataNascimento(new Date());
+        p3.setNome("José");
+        p3.setSalario(new BigDecimal(555.999999d));
+        p3.setEmail("jose@ifsp.edu.br");
+        p3.setLogradouro("Y");
+        p3.setNumero(1);
         
         //TEM QUE FALHAR POR CAUSA DO E-MAIL
 //        Pessoa p4 = new Pessoa();

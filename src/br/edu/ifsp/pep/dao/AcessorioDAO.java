@@ -56,4 +56,15 @@ public class AcessorioDAO {
         
         return query.getResultList();
     }
+    
+    public List<Acessorio> retornarAcessorio(int codigo){
+        //JPQL
+        //Sempre pensar em classe
+        //SELECT c FROM Categoria(Nome da classe) c
+        TypedQuery<Acessorio> query = getEntityManager()
+                .createQuery("SELECT a FROM Acessorio a WHERE a.codigo = "
+                        + codigo, Acessorio.class);
+        
+        return query.getResultList();
+    }
 }

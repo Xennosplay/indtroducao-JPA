@@ -5,9 +5,11 @@
 package br.edu.ifsp.pep.dao;
 
 import br.edu.ifsp.pep.modelo.Veiculo;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 /**
  *
@@ -46,5 +48,15 @@ public class VeiculoDAO {
         
         em.close();
         
+    }
+    
+    public List<Veiculo> buscar(){
+        //JPQL
+        //Sempre pensar em classe
+        //SELECT c FROM Categoria(Nome da classe) c
+        TypedQuery<Veiculo> query = getEntityManager()
+                .createQuery("SELECT b FROM Veiculo b", Veiculo.class);
+        
+        return query.getResultList();
     }
 }
